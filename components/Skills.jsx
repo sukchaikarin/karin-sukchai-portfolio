@@ -1,9 +1,12 @@
 import React from "react";
+import SkillsBar from "./SkillsBar";
+import TestSkills from "./TestSkills";
 
 const Skills = () => {
   return (
-    <section className="py-12 xl:py-12  xl:pt-16 bg-[#ddd] ">
-      <div className="container mx-auto">Skills</div>
+    <section className="py-12  xl:py-12   xl:pt-16 bg-secondary ">
+      <SkillsBar />
+      <TestSkills className="bg-secondary" />
     </section>
   );
 };
