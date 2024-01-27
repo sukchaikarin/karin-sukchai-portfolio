@@ -15,13 +15,14 @@ const MobileNav = () => {
       <SheetContent>
         <div className=" flex flex-col items-center justify-between h-full py-8">
           <div className="flex flex-col items-center gap-y-32">
-            <div className="flex gap-2 items-center">
+            <div className="flex gap-x-4 items-center">
               <Logo />
-              <div className="flex flex-col ">
-                <p className="font-bold 	uppercase tracking-wider">
+              <div className="flex flex-col gap-y-1 ">
+                <p className="font-bold text-[8px] 	uppercase tracking-widest">
                   software developer
                 </p>
-                <p className="font-bold 	uppercase tracking-wider">
+                <div className="h-[2px] w-100 bg-slate-800"></div>
+                <p className="font-bold text-[8px]	uppercase tracking-wider">
                   Karin Sukchai
                 </p>
               </div>
