@@ -36,7 +36,7 @@ const TestSkills = () => {
     <MovieContext.Provider value={value}>
       <div className="bg-secondary container">
         <SkillsFilters />
-        <div className="flex flex-wrap items-center justify-center gap-8">
+        <div className="flex flex-wrap items-center justify-center mt-10 gap-8">
           <SkillsCard />
         </div>
         {/*  <ButtonFilters />
