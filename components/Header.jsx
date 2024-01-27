@@ -24,10 +24,10 @@ const Header = () => {
     <header className="bg-secondary py-4 sticky top-0 z-30 transition-all">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <div className="flex gap-x-4 items-center">
+          <div className="flex gap-x-2 items-center">
             <Logo />
             <div className="flex flex-col gap-y-1 ">
-              <p className="font-bold text-[8px] 	uppercase tracking-wider ">
+              <p className="font-bold text-[8px] 	uppercase ">
                 software developer
               </p>
               <div className="h-[2px] w-5/6 bg-primary"></div>
