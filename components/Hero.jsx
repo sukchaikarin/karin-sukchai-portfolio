@@ -14,10 +14,8 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/*text */}
-          <div className="md:flex flex-row-reverse gap-x-12  ">
-            {/* Socials */}
-
-            <div className="flex max-w-[650px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
+          <div className="md:flex flex-row-reverse gap-x-20  ">
+            <div className="flex max-w-[650px] flex-col gap-y-4 justify-center mx-auto xl:mx-0 text-center xl:text-left">
               <div className="text-sm uppercase font-semibold mb-2 text-primary tracking-[4px]">
                 Software Developer
               </div>
@@ -44,8 +42,9 @@ const Hero = () => {
                 </Button>
               </div>
             </div>
+            {/* Socials */}
             <Socials
-              containerStyles="hidden xl:flex flex-col gap-y-9 mt-10 "
+              containerStyles="hidden xl:flex flex-col gap-y-10 mt-14 "
               iconsStyles="text-foreground text-[30px] hover:text-[#474554] transition-all hover:text-[35px]"
             />
           </div>
