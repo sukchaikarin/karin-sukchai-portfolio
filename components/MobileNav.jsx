@@ -18,7 +18,7 @@ const MobileNav = () => {
             <div className="flex gap-x-4 items-center">
               <Logo />
               <div className="flex flex-col gap-y-1 ">
-                <p className="font-bold text-[8px] 	uppercase tracking-widest">
+                <p className="font-bold text-[8px] 	uppercase tracking-wider">
                   software developer
                 </p>
                 <div className="h-[2px] w-100 bg-slate-800"></div>
