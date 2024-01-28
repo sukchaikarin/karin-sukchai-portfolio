@@ -11,6 +11,7 @@ const ThemeToggler = () => {
         variant="outline"
         size="icon"
         onClick={() => setTheme(theme === "dark" ? "Light" : "dark")}
+        aria-pressed="false"
       >
         <SunIcon
           className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all
