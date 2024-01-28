@@ -12,7 +12,7 @@ const MobileNav = () => {
       <SheetTrigger asChild>
         <AlignJustify
           className="cursor-pointer"
-          aria-pressed="false"
+          aria-hidden="true"
         ></AlignJustify>
       </SheetTrigger>
       <SheetContent>
