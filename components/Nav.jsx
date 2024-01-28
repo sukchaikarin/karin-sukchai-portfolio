@@ -46,14 +46,12 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
   return (
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => (
-        <a href={`#${link.path}`} className={`capitalize ${linkStyles}`}>
-          <ScrollLink
-            to={link.path}
-            smooth={true}
-            duration={500}
-            spy={true}
-            key={index}
-          >
+        <a
+          href={`#${link.path}`}
+          className={`capitalize ${linkStyles}`}
+          key={index}
+        >
+          <ScrollLink to={link.path} smooth={true} duration={500} spy={true}>
             {activeLink === link.path && (
               <motion.span
                 initial={{ y: "-100%" }}
