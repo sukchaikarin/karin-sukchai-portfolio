@@ -46,26 +46,27 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
   return (
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => (
-        <ScrollLink
-          to={link.path}
-          smooth={true}
-          duration={500}
-          spy={true}
-          key={index}
-          className={`capitalize ${linkStyles} `}
-        >
-          {activeLink === link.path && (
-            <motion.span
-              initial={{ y: "-100%" }}
-              animate={{ y: 0 }}
-              transition={{ type: "tween" }}
-              layoutId="underline"
-              className={`${underlineStyles}`}
-            />
-          )}
-
-          {link.name}
-        </ScrollLink>
+        <a href={`#${link.path}`} className={`capitalize ${linkStyles}`}>
+          <ScrollLink
+            to={link.path}
+            smooth={true}
+            duration={500}
+            spy={true}
+            key={index}
+            className={`capitalize ${linkStyles}`}
+          >
+            {activeLink === link.path && (
+              <motion.span
+                initial={{ y: "-100%" }}
+                animate={{ y: 0 }}
+                transition={{ type: "tween" }}
+                layoutId="underline"
+                className={`${underlineStyles}`}
+              />
+            )}
+            {link.name}
+          </ScrollLink>
+        </a>
       ))}
     </nav>
   );
