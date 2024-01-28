@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
@@ -7,6 +8,14 @@ import { RiArrowDownSLine } from "react-icons/ri";
 // components
 import DevImg from "./DevImg";
 import Socials from "./Socials";
+
+const herodetail = {
+  name: `Experienced web developer with expertise in creating a
+  university event registration system. Strong technical skills,
+  teamwork, and a positive and patient approach. Seeking a full
+  stack software developer role to contribute effectively to team
+  projects and drive software innovation.`,
+};
 
 const Hero = () => {
   return (
@@ -21,11 +30,7 @@ const Hero = () => {
               </div>
               <h1 className="h1 mb-4">Hi, my name is Karin Sukchai</h1>
               <p className="subtitle max-w-sm mx-auto xl:mx-0 ">
-                Experienced web developer with expertise in creating a
-                university event registration system. Strong technical skills,
-                teamwork, and a positive and patient approach. Seeking a full
-                stack software developer role to contribute effectively to team
-                projects and drive software innovation.
+                {herodetail.name}
               </p>
               {/* buttons */}
               <div className="flex flex-col gap-y-3 md:flex-row gap-x-10 mx-auto xl:mx-0 mb-12">

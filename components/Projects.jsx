@@ -10,8 +10,6 @@ const Projects = () => {
       <h2 className="h2 ">Projects</h2>
       <div className="flex flex-wrap mt-10 gap-6 px-4">
         <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
       </div>
     </section>
   );

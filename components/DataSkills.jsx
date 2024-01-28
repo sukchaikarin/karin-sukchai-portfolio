@@ -104,10 +104,4 @@ export const dataskill = [
     name: "Trello",
     img: "trello.svg",
   },
-  {
-    id: 17,
-    type: [1, 5],
-    name: "VSCode",
-    img: "vscode.svg",
-  },
 ];
