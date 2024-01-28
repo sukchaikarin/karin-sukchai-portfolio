@@ -53,7 +53,7 @@ const Hero = () => {
           <div className="hidden justify-center  md:flex   xl:flex  ">
             <DevImg
               containerStyles="w-[350px] h-[350px] relative xl:w-[450px] xl:h-[450px]   relative"
-              imgSrc="/software-dev-img.png"
+              imgSrc="/karin-cartoon.webp"
             />
           </div>
         </div>

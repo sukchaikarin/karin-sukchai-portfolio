@@ -9,6 +9,7 @@ const DevImg = ({ containerStyles, imgSrc }) => {
         priority={true}
         alt="Software-Developer-Image"
         sizes="(max-width: 450px) 100vw,(max-width: 320px) 80vw"
+        loading="lazy"
       />
     </div>
   );
