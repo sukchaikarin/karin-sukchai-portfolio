@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  RiSlackFill,
   RiLinkedinFill,
   RiGithubFill,
   RiFacebookBoxFill,
@@ -12,23 +11,20 @@ import Link from "next/link";
 
 const icons = [
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/karin-sukchai/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/sukchaikarin",
     name: <RiGithubFill />,
   },
+
   {
-    path: "/",
-    name: <RiSlackFill />,
-  },
-  {
-    path: "/",
+    path: "https://www.facebook.com/DevInvestorKarin",
     name: <RiFacebookBoxFill />,
   },
   {
-    path: "/",
+    path: "https://www.instagram.com/karin_kan22/",
     name: <RiInstagramFill />,
   },
 ];
