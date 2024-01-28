@@ -1,4 +1,3 @@
-import { Link as ScrollLink } from "react-scroll";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
@@ -23,11 +22,6 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
       if (section) {
         const { top } = section.getBoundingClientRect();
         if (top < scrollPosition) {
-          console.log(
-            `top : ${top} --- scrollpositon : ${scrollPosition} = ${sectionId}`
-          );
-
-          console.log(sectionId);
           setActiveLink(sectionId);
         }
       }
@@ -43,16 +37,21 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
     };
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className={`${containerStyles}`}>
-      {links.map((link, index) => (
-        <ScrollLink
-          to={link.path}
-          smooth={true}
-          duration={500}
-          spy={true}
+      {links.map((link) => (
+        <a
+          href={`#${link.path}`}
+          onClick={() => scrollToSection(link.path)}
           key={link.name}
-          className={`capitalize ${linkStyles} `}
+          className={`capitalize ${linkStyles}`}
         >
           {activeLink === link.path && (
             <motion.span
@@ -63,9 +62,8 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
               className={`${underlineStyles}`}
             />
           )}
-
           {link.name}
-        </ScrollLink>
+        </a>
       ))}
     </nav>
   );
