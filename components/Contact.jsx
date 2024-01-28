@@ -37,6 +37,7 @@ const Contact = () => {
                   <Input
                     type="text"
                     id="name"
+                    name="name"
                     placeholder="Please enter your name..."
                   />
                 </div>
@@ -45,6 +46,7 @@ const Contact = () => {
                   <Input
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="your-email@email.com"
                   />
                 </div>
@@ -54,12 +56,17 @@ const Contact = () => {
                 <Input
                   type="text"
                   id="subject"
+                  name="subject"
                   placeholder="what your subject?..."
                 />
               </div>
               <div className="flex flex-col space-y-1.5">
                 <Label htmlFor="message">Message</Label>
-                <Textarea placeholder="Type your message here." id="message" />
+                <Textarea
+                  placeholder="Type your message here."
+                  id="message"
+                  name="message"
+                />
               </div>
             </div>
           </form>
