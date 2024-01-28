@@ -53,7 +53,6 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
             duration={500}
             spy={true}
             key={index}
-            className={`capitalize ${linkStyles}`}
           >
             {activeLink === link.path && (
               <motion.span
