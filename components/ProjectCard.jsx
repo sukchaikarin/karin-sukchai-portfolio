@@ -12,8 +12,9 @@ const ProjectCard = () => {
           src="/colmar-project.webp"
           alt="colmar-project"
           className="w-full hover:translate-y-[-60%] delay-150 duration-1000 ease-in-out "
-          style={{ width: "100%", height: "auto" }}
           loading="lazy"
+          width="100%"
+          height="auto"
         />
       </div>
       <div className=" mt-4 gap-4 w-full flex flex-col justify-start">
