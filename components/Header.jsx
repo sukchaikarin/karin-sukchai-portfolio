@@ -5,11 +5,9 @@ import Nav from "./Nav";
 import ThemeToggler from "./ThemeToggler";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
-import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [header, setHeader] = useState(false);
-  const pathname = usePathname();
 
   useEffect(() => {
     const scrollYPos = window.addEventListener("scroll", () => {
@@ -21,7 +19,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-secondary py-4 sticky top-0 z-30 transition-all">
+    <header className="bg-secondary py-2 sticky top-0 z-30  transition-all">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex gap-x-2 items-center">
@@ -41,7 +39,7 @@ const Header = () => {
             <Nav
               containerStyles="hidden xl:flex gap-x-8 items-center"
               linkStyles="relative hover:text-primary transition-all"
-              underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
+              underlineStyles="absolute left-0 bottom-0 h-[2px] bg-primary w-full"
             />
             <ThemeToggler />
             {/*MobileNav */}

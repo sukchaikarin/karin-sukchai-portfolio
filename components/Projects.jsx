@@ -3,9 +3,12 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col justify-center items-center  py-12  xl:py-12   xl:pt-16  ">
-      <h2 className="h2 mb-6">Projects</h2>
-      <div className="flex flex-wrap mt-10 gap-10 ">
+    <section
+      id="projects"
+      className="flex flex-col justify-center items-center  py-6  xl:py-24  "
+    >
+      <h2 className="h2 ">Projects</h2>
+      <div className="flex flex-wrap mt-10 gap-6 px-4">
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />

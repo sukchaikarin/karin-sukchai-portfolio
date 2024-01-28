@@ -10,7 +10,7 @@ import Socials from "./Socials";
 
 const Hero = () => {
   return (
-    <section className="py-16  xl:py-16  xl:pt-16  ">
+    <section id="home" className="py-16    xl:py-24  ">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/*text */}
@@ -50,15 +50,15 @@ const Hero = () => {
           </div>
 
           {/*image */}
-          <div className="hidden md:flex  xl:flex  ">
+          <div className="hidden justify-center  md:flex   xl:flex  ">
             <DevImg
-              containerStyles="w-[320px] h-[320px] relative xl:w-[450px] h-[450px]   relative"
+              containerStyles="w-[350px] h-[350px] relative xl:w-[450px] xl:h-[450px]   relative"
               imgSrc="/software-dev-img.png"
             />
           </div>
         </div>
         {/*icon */}
-        <div className="hidden md:flex absolute left-2/4 bottom-16 xl:bottom-12 animate-bounce">
+        <div className="hidden md:flex absolute left-2/4 bottom-16 xl:bottom-8 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>
