@@ -40,7 +40,17 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      try {
+        window.scroll({
+          top: section.offsetTop,
+          behavior: "smooth",
+        });
+      } catch (error) {
+        window.scroll({
+          top: section.offsetTop,
+          behavior: "auto", // ลองให้เป็น "auto" ถ้า "smooth" ไม่ทำงาน
+        });
+      }
     }
   };
 
