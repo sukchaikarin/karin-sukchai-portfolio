@@ -6,7 +6,6 @@ const DevImg = ({ containerStyles, imgSrc }) => {
       <Image
         src={imgSrc}
         fill={true}
-        priority={true}
         alt="Software-Developer-Image"
         sizes="(max-width: 450px) 100vw,(max-width: 320px) 80vw"
         loading="lazy"

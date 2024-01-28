@@ -13,8 +13,8 @@ const ProjectCard = () => {
           alt="colmar-project"
           className="w-full hover:translate-y-[-60%] delay-150 duration-1000 ease-in-out "
           loading="lazy"
-          width="100%"
-          height="auto"
+          width="320px"
+          height="180px"
         />
       </div>
       <div className=" mt-4 gap-4 w-full flex flex-col justify-start">
