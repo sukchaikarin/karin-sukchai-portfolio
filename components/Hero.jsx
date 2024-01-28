@@ -20,7 +20,7 @@ const Hero = () => {
                 Software Developer
               </div>
               <h1 className="h1 mb-4">Hi, my name is Karin Sukchai</h1>
-              <p className="subtitle max-w-[600px] mx-auto xl:mx-0 ">
+              <p className="subtitle max-w-sm mx-auto xl:mx-0 ">
                 Experienced web developer with expertise in creating a
                 university event registration system. Strong technical skills,
                 teamwork, and a positive and patient approach. Seeking a full

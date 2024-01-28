@@ -35,7 +35,9 @@ const Socials = ({ containerStyles, iconsStyles }) => {
       {icons.map((icon, index) => {
         return (
           <Link href={icon.path} key={index}>
-            <div className={`${iconsStyles}`}>{icon.name}</div>
+            <div className={`${iconsStyles}`} aria-label={`${icon.name} link`}>
+              {icon.name}
+            </div>
           </Link>
         );
       })}
