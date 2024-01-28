@@ -33,20 +33,20 @@ const Contact = () => {
             <div className="grid w-full items-center gap-4">
               <div className="flex gap-2 ">
                 <div className="grow flex flex-col space-y-1.5">
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="fullname">Name</Label>
                   <Input
                     type="text"
-                    id="name"
-                    name="name"
+                    id="fullname"
+                    name="fullname"
                     placeholder="Please enter your name..."
                   />
                 </div>
                 <div className="grow flex flex-col space-y-1.5">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="contactemail">Email</Label>
                   <Input
                     type="email"
-                    id="email"
-                    name="email"
+                    id="contactemail"
+                    name="contactemail"
                     placeholder="your-email@email.com"
                   />
                 </div>
