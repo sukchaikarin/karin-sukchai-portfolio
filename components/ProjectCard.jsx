@@ -9,9 +9,10 @@ const ProjectCard = () => {
     <div className="bg-white dark:text-secondary p-4 hover:border-2 hover:border-zinc-700 rounded-lg shadow-lg max-w-sm flex flex-col justify-center items-center mx-auto   hover:scale-105 duration-200">
       <div className="w-full h-[250px] lg:w-full  overflow-hidden rounded-lg hover:cursor-pointer">
         <img
-          src="/colmar-project.png"
-          alt=""
+          src="/colmar-project.webp"
+          alt="colmar-project"
           className="w-full hover:translate-y-[-60%] delay-150 duration-1000 ease-in-out "
+          loading="lazy"
         />
       </div>
       <div className=" mt-4 gap-4 w-full flex flex-col justify-start">
