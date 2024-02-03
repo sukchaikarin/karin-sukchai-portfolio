@@ -34,7 +34,7 @@ const Socials = ({ containerStyles, iconsStyles }) => {
     <div className={`${containerStyles}`}>
       {icons.map((icon, index) => {
         return (
-          <Link href={icon.path} key={index}>
+          <Link target="_blank" href={icon.path} key={index}>
             <div className={`${iconsStyles}`} aria-label={`${icon.name} link`}>
               {icon.name}
             </div>
