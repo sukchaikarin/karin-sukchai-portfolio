@@ -9,7 +9,7 @@ const Projects = () => {
     >
       <h2 className="h2 ">Projects</h2>
       <article className="flex flex-wrap mt-10 gap-6 px-4">
-        <ProjectCard />
+        {/* <ProjectCard /> */}
       </article>
     </section>
   );
