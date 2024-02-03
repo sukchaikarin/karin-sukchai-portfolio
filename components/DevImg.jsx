@@ -6,9 +6,9 @@ const DevImg = ({ containerStyles, imgSrc }) => {
       <Image
         src={imgSrc}
         alt="Software-Developer-Image"
-        loading="lazy"
-        width="350"
-        height="350"
+        width={350}
+        height={350}
+        priority
       />
     </div>
   );

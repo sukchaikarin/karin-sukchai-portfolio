@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { RiGithubFill, RiExternalLinkLine } from "react-icons/ri";
 const ProjectCard = () => {
   return (
-    <div className="bg-white dark:text-secondary p-4 hover:border-2 hover:border-zinc-700 rounded-lg shadow-lg max-w-sm flex flex-col justify-center items-center mx-auto   hover:scale-105 duration-200">
+    <div className="bg-white border-2 border-zinc-700 dark:text-secondary p-4 hover:border-4 hover:border-zinc-700 rounded-lg shadow-lg max-w-sm flex flex-col justify-center items-center mx-auto   hover:scale-105 duration-200">
       <div className="w-full h-[250px] lg:w-full  overflow-hidden rounded-lg hover:cursor-pointer">
         <img
           src="/colmar-project.webp"

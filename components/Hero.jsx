@@ -57,9 +57,9 @@ const Hero = () => {
           </div>
 
           {/*image */}
-          <div className="hidden justify-center items-center  md:flex   xl:flex  ">
+          <div className="hidden justify-center  items-center  md:flex   xl:flex  ">
             <DevImg
-              containerStyles="w-[350px] h-[350px] relative xl:w-[450px] xl:h-[450px]   relative"
+              containerStyles="w-[350px] h-auto relative xl:w-[450px] xl:h-auto   "
               imgSrc="/karin-cartoon.webp"
             />
           </div>
