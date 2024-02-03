@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { Card } from "flowbite-react";
 import { Button } from "./ui/button";
 import { RiGithubFill, RiExternalLinkLine } from "react-icons/ri";
 const ProjectCard = () => {
@@ -25,7 +24,7 @@ const ProjectCard = () => {
         <h4>Responsive : Desktop , Mobile</h4>
 
         <div className="flex flex-col justify-between gap-y-3 md:flex-row gap-x-10 mx-auto xl:mx-0 ">
-          <Link href="/contact">
+          <Link href="#contact">
             <Button
               variant="secondary"
               size="sm"
@@ -34,12 +33,14 @@ const ProjectCard = () => {
               Link <RiExternalLinkLine />
             </Button>
           </Link>
-          <Button
-            size="sm"
-            className="gap-x-2 bg-[#020817] text-white hover:bg-transparent hover:text-[#020817] hover:border-2 hover:border-[#020817]  shadow-lg "
-          >
-            Github <RiGithubFill />
-          </Button>
+          <Link href="#contact">
+            <Button
+              size="sm"
+              className="gap-x-2 bg-[#020817] text-white hover:bg-transparent hover:text-[#020817] hover:border-2 hover:border-[#020817]  shadow-lg "
+            >
+              Github <RiGithubFill />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
