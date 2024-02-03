@@ -28,8 +28,10 @@ const Hero = () => {
               <div className="text-sm uppercase font-semibold mb-2 text-primary tracking-[4px]">
                 Software Developer
               </div>
-              <h1 className="h1 mb-4">Hi, my name is Karin Sukchai</h1>
-              <p className="subtitle max-w-sm mx-auto xl:mx-0 ">
+              <h1 className="font-bold text-5xl lg:text-7xl mb-4">
+                Hi, my name is Karin Sukchai
+              </h1>
+              <p className="subtitle w-auto mx-auto xl:mx-0 ">
                 {herodetail.name}
               </p>
               {/* buttons */}
@@ -55,9 +57,9 @@ const Hero = () => {
           </div>
 
           {/*image */}
-          <div className="hidden justify-center items-center  md:flex   xl:flex  ">
+          <div className="hidden justify-center  items-center  md:flex   xl:flex  ">
             <DevImg
-              containerStyles="w-[350px] h-[350px] relative xl:w-[450px] xl:h-[450px]   relative"
+              containerStyles="w-[350px] h-auto relative xl:w-[450px] xl:h-auto   "
               imgSrc="/karin-cartoon.webp"
             />
           </div>

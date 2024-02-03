@@ -1,8 +1,25 @@
 "use client";
-
+import { useContext } from "react";
+import { useState, useEffect } from "react";
+import { SkillContext } from "./MySkills";
 import { ToggleGroup, ToggleGroupItem } from "./ui/toggle-group";
+import { filterskillsbtn } from "./SkillsDataBtn";
+
 const SkillsFilters = () => {
-  const filterskills = ["All", "Languages", "Frameworks", "Databases", "Tools"];
+  const [tabActive, setTabActive] = useState(1);
+  const { allSkills, setFilterSkills } = useContext(SkillContext);
+
+  const handleClickFilter = (id) => {
+    setTabActive(id);
+    const filteredSkills = allSkills?.filter((skills) =>
+      skills.type.includes(id)
+    );
+    if (id === 1) {
+      setFilterSkills(allSkills);
+    } else {
+      setFilterSkills(filteredSkills);
+    }
+  };
 
   return (
     <ToggleGroup
@@ -10,14 +27,15 @@ const SkillsFilters = () => {
       size="sm"
       type="single"
     >
-      {filterskills.map((item, index) => (
+      {filterskillsbtn.map((item, index) => (
         <ToggleGroupItem
           className="bg-primary border-2 border-primary text-secondary"
-          value={index + 1}
+          value={item.id}
           key={index}
-          aria-label={item}
+          aria-label={item.name}
+          onClick={() => handleClickFilter(item.id)}
         >
-          {item}
+          {item.name}
         </ToggleGroupItem>
       ))}
     </ToggleGroup>
