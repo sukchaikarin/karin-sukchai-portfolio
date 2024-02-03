@@ -1,22 +1,22 @@
-export const skiller = [
+export const filterskillsbtn = [
   {
-    id: 0,
+    id: 1,
     name: "All",
   },
   {
-    id: 1,
+    id: 2,
     name: "Languages",
   },
   {
-    id: 2,
+    id: 3,
     name: "Frameworks",
   },
   {
-    id: 3,
+    id: 4,
     name: "Databases",
   },
   {
-    id: 4,
+    id: 5,
     name: "Tools",
   },
 ];

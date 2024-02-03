@@ -10,7 +10,7 @@ const Logo = () => {
         width="0"
         height="0"
         sizes="100vw"
-        className="w-full h-auto"
+        className="w-[35px] h-auto"
         priority={true}
         alt="logo-karin"
       />
