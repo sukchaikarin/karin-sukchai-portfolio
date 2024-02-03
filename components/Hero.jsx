@@ -36,7 +36,7 @@ const Hero = () => {
               </p>
               {/* buttons */}
               <div className="flex flex-col gap-y-3 md:flex-row gap-x-10 mx-auto xl:mx-0 mb-12">
-                <Link href="/contact">
+                <Link href="#contact">
                   <Button
                     variant="secondary"
                     className=" border-2 border-primary gap-x-2 shadow-lg bg-transparent"
