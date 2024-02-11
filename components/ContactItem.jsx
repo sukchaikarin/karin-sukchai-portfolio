@@ -8,7 +8,7 @@ import {
   RiPhoneFill,
 } from "react-icons/ri";
 
-const iconStyle = { width: "45px", height: "45px" };
+const iconStyle = { width: "30px", height: "30px" };
 const itemsOfContact = [
   {
     id: 1,
@@ -49,13 +49,13 @@ const itemsOfContact = [
 
 const ContactItem = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 h-full justify-between pt-4">
       {itemsOfContact.map((icon, index) => {
         return (
           <Link target="_blank" href={icon.path} key={index}>
             <div className="flex gap-10">
               <div aria-label={`${icon.name}-link`}>{icon.name}</div>
-              <span className="text-3xl tracking-wider">{icon.element}</span>
+              <span className="text-xl tracking-wider">{icon.element}</span>
             </div>
           </Link>
         );

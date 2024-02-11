@@ -19,7 +19,7 @@ const herodetail = {
 
 const Hero = () => {
   return (
-    <section id="home" className="py-16    xl:py-24  ">
+    <section id="home" className="py-16 relative   xl:py-24  ">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/*text */}
