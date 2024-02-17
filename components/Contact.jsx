@@ -74,21 +74,23 @@ const Contact = () => {
               <div className="grow pt-4">
                 <div className="grid w-full items-center gap-4">
                   <div className=" flex flex-col space-y-1.5">
-                    <Label htmlFor="fullname">Name</Label>
+                    <Label htmlFor="name">Name</Label>
                     <Input
                       type="text"
                       id="name"
                       name="name"
                       placeholder="Please enter your name..."
+                      autocomplete="name"
                     />
                   </div>
                   <div className=" flex flex-col space-y-1.5">
-                    <Label htmlFor="contactemail">Email</Label>
+                    <Label htmlFor="email">Email</Label>
                     <Input
                       type="email"
                       id="email"
                       name="email"
                       placeholder="your-email@email.com"
+                      autocomplete="email"
                     />
                   </div>
 
@@ -98,6 +100,7 @@ const Contact = () => {
                       placeholder="Type your message here."
                       id="message"
                       name="message"
+                      autocomplete="off"
                     />
                   </div>
                 </div>
